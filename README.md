@@ -12,6 +12,8 @@ Third page is your playground. Create interactive dataviz, embed videos or image
 
 Upload the pages and all associated files and create a pull request to the tmd directory.
 
+Make sure to take advantage of all types of online resources if you have trouble using git or any of the other web development skills that are required to complete this application.
+
 Resources:
 
 http://www.w3schools.com/
