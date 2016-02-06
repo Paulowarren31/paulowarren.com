@@ -13,6 +13,9 @@ Upload the pages and all associated files and create a pull request to the tmd d
 Resources:
 
 http://www.w3schools.com/
+
 https://www.javascript.com/
+
 http://www.awwwards.com/
+
 http://www.highcharts.com/
