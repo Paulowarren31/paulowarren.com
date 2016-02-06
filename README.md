@@ -11,8 +11,8 @@ Third page is your playground. Create interactive dataviz, embed videos or image
 Upload the pages and all associated files and create a pull request to the tmd directory.
 
 Resources:
+
 http://www.w3schools.com/
 https://www.javascript.com/
 http://www.awwwards.com/
 http://www.highcharts.com/
-
