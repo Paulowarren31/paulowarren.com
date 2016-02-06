@@ -23,3 +23,7 @@ https://www.javascript.com/
 http://www.awwwards.com/
 
 http://www.highcharts.com/
+
+https://help.github.com/articles/fork-a-repo/
+
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
