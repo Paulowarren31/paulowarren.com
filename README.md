@@ -4,7 +4,7 @@ Create a new directory on your local machine and fork this repository. You will 
 
 Create a three page website, using html, css, and javascript.
 
-First page is bio, and contains links to the two other pages.
+First page is personal biography and contains links to the two other pages.
 
 Second page is a short write-up on what aspect(s) of the Michigan Daily website you think can be improved.
 
