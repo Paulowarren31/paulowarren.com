@@ -1,5 +1,7 @@
 # README #
 
+Create a new directory on your local machine and fork this repository. You will be pushing your final project to this repository when you are completed with the project.
+
 Create a three page website, using html, css, and javascript.
 
 First page is bio, and contains links to the two other pages.
