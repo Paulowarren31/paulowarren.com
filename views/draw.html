@@ -1,0 +1,63 @@
+<div class="well">
+
+    <div class="pull-right alert alert-danger alert-dismissible" style="position:absolute;top:15%;left:35%;" ng-show="notTen" role="alert">
+        <button type="button" class="close" data-dismiss="alert" ng-click="ten()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Oops!</strong> You can only save with 20 lines.
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="title">Draw by clicking.</h1>
+        </div>
+        <div class="col-md-6">
+            <h2><span class="label label-info title pull-right">{{20 - getLines()}}</span></h2>
+        </div>
+    </div>
+    <div ng-init="printBorder()" ng-mousedown="mouse($event)" ng-show="!clearing">
+        <canvas style="width:100%;height:100%;"id="board" resize></canvas>
+    </div>
+
+    <div class="well blue-border">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="pull-left">({{lastPt.x}}, {{lastPt.y}}) {{loading}}</h3>
+            </div>
+
+            <div class="col-md-2">
+                <button type="button" class="btn btn-success btn-lg title" ng-click="save()">
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>  Save
+                </button>
+            </div>
+
+            <div class="col-md-2">
+                <a class="btn btn-warning btn-lg title" ng-click="undo()">
+                    Undo
+                </a>
+            </div>
+
+
+            <div class="col-md-2">
+                <a class="btn btn-default blue btn-lg title" ng-click="reset()">
+                    Reset
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+            <h3 class="panel-title">Past Drawings</h3>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <canvas style="width:100%;height:100%;"id="displayBoard1" resize></canvas>
+        </div>
+        <div class="col-md-12">
+            <canvas style="width:100%;height:100%;"id="displayBoard2" resize></canvas>
+        </div>
+        <div class="col-md-12">
+            <canvas style="width:100%;height:100%;"id="displayBoard3" resize></canvas>
+        </div>
+    </div>
+</div>
