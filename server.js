@@ -16,7 +16,7 @@ app.get('/', index);
 //this is for angular routing
 app.get('*', index);
 
-function index(req,res){
+function index(req, res){
 	res.sendFile(__dirname + '/index.html');
 }
 

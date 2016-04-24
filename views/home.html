@@ -1,38 +1,39 @@
 <div class="well">
     <div class="row">
         <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../static/img/paulo.jpg" alt="...">
+            <img id="face" src="../static/img/paulo.jpg" style="display:none;" alt="...">
+            <div class="thumbnail" ng-init="init()" ng-mousedown="mouseClick($event)" ng-mousemove="mouseDrag($event)" ng-mouseup="mouseUp()" ng-mouseleave="mouseUp()">
+                <canvas style="width:100%;height:300px;"id="Canvas" resize></canvas>
             </div>
+            <small>Feel free to draw on my face. </small>
         </div>
         <div class="col-sm-8">
             <div class="caption">
-                <h2 class="title">Paulo Warren</h2>
-                <h5 class="title">{{email}} - {{phone}} - <a href="{{github}}" target="_blank">{{github}}</a></h5>
+                <h2 class="title">Paulo Warren <h5 class="title">{{email}} - {{phone}}</h5></h2>
+                
                 <br>
-                <p class="justified">{{aboutPaulo}}</p>
-                <p class="justified">{{siteExplained}}</p>
+                <p class="justified">{{about}}</p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12" style="padding-right: 5%;">
             <div class="panel panel-default">
-                <div class="panel-heading title">Paulo's Experience</div>
+                <div class="panel-heading title"><h4>Projects</h4></div>
                 <div class="panel-body">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h3 class="list-group-item-heading title"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Node.js</h3>
+                            <h3 class="list-group-item-heading title">Project 1 <a class="btn btn-sm btn-social-icon btn-github pull-right"><span class="fa fa-github"></span></a></h3>
                             <br>
-                            <p class="list-group-item-text">{{nodeText}}</p>
+                            <p class="list-group-item-text"></p>
                         </li>
                         <li class="list-group-item">
-                            <h3 class="list-group-item-heading title"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> AngularJS</h3>
+                            <h3 class="list-group-item-heading title">Project 2<a class="btn btn-sm btn-social-icon btn-github pull-right"><span class="fa fa-github"></span></a></h3>
                             <br>
                             <p class="list-group-item-text">{{angularText}}</p>
                         </li>
                         <li class="list-group-item">
-                            <h3 class="list-group-item-heading title"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> GAMCINC App</h3>
+                            <h3 class="list-group-item-heading title">Project 3<a class="btn btn-sm btn-social-icon btn-github pull-right"><span class="fa fa-github"></span></a></h3>
                             <br>
                             <p class="list-group-item-text">{{gamcincText}}</p>
                         </li>
@@ -41,51 +42,5 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12" style="padding-right: 5%;">
-            <div class="panel panel-default">
-                <div class="panel-heading title">A note on the playground</div>
-                <div class="panel-body">
-                    <p>{{playGround}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <button type="button" class="btn btn-default btn-md title blue" data-toggle="modal" data-target="#myModal">
-                  Writing
-            </button>
-            <a href="/draw"><button type="button" class="btn btn-default btn-md title blue">
-                  Draw
-            </button></a>
-        </div>
-    </div>
 </div>
 
-<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title title">Thoughts on michigandaily.com</h4>
-          </div>
-          <div class="modal-body">
-              <p>{{beginWriteup}}</p>
-              <hr>
-              <ul>
-                  <li>{{write1}}</li>
-                  <br>
-                  <li>{{write2}}</li>
-                  <br>
-                  <li>{{write3}}</li>
-              </ul>
-              <br>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-default btn-lg pull-right title blue" data-dismiss="modal" aria-label="Close">Close</button>
-          </div>
-      </div>
-  </div>
-</div>

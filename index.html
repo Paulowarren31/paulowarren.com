@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville|Lora' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,10 +24,7 @@
                 <div class="navbar-header">
                     <a class="navbar-brand title" style="color: white;" href="/">Paulo Warren</a>
                 </div>
-                <ul class="nav navbar-nav pull-right">
-                <li><a class="nav-title title" href="/draw">Draw</a></li>
-                </ul>
-            </div>
+                </div>
         </nav>
         <div class="container-fluid">
             <div class="row-fluid">
@@ -38,16 +37,19 @@
 
     <hr>
     <div class="container">
-        <p class="title">© 2016 Paulo Warren</p>
+        <p class="title">© 2016 Paulo Warren
+            <a class="btn btn-social-icon btn-github pull-right"><span class="fa fa-github"></span></a>
+        </p>
     </div>
     <script src="/static/js/paper-full.js"></script>
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/static/js/angular-route.js"></script>
     <script src="/angular/controllers/MainCtrl.js"></script>
-    <script src="/angular/controllers/DrawCtrl.js"></script>
     <script src="/angular/routes.js"></script>
     <script src="/angular/app.js"></script>
+    <script src="/angular/factories/draw.js"></script>
     <script src="/static/js/jquery-1.12.0.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jscolor.js"></script>
 </body>
 </html>

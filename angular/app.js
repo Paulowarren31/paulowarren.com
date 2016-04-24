@@ -1,1 +1,1 @@
-angular.module('pauloApp', ['ngRoute', 'routes', 'MainCtrl']);
+angular.module('pauloApp', ['ngRoute', 'routes', 'Main']);
